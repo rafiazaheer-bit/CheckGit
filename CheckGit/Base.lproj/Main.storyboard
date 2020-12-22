@@ -16,24 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kI-Aa-hpP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kI-Aa-hpP">
                                 <rect key="frame" x="93" y="91" width="228" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="nYo-BU-Rao"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bhbhsjdabhsabjdhsabdjsahdjbsj" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Bh-osN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bhbhsjdabhsabjdhsabdjsahdjbsj" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-Bh-osN">
                                 <rect key="frame" x="66" y="171" width="306" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="PeC-aX-aBl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jy0-cb-uS9">
+                                <rect key="frame" x="0.0" y="484" width="414" height="378"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="378" id="ePc-DB-qg8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jy0-cb-uS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3NR-En-Nu5"/>
+                            <constraint firstItem="5kI-Aa-hpP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="Cde-QR-jXO"/>
+                            <constraint firstItem="nTG-Bh-osN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="IUN-Gd-877"/>
+                            <constraint firstItem="Jy0-cb-uS9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="N1z-BT-eXj"/>
+                            <constraint firstItem="Jy0-cb-uS9" firstAttribute="centerX" secondItem="5kI-Aa-hpP" secondAttribute="centerX" id="N71-De-fYL"/>
+                            <constraint firstItem="nTG-Bh-osN" firstAttribute="top" secondItem="5kI-Aa-hpP" secondAttribute="bottom" constant="8" id="T5f-26-RT8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nTG-Bh-osN" secondAttribute="trailing" constant="42" id="Ur0-7P-sHz"/>
+                            <constraint firstItem="5kI-Aa-hpP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="rvP-EV-B21"/>
+                            <constraint firstItem="Jy0-cb-uS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zC9-aA-XIb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,6 +63,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
